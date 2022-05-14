@@ -1,0 +1,25 @@
+{
+  "name": "hw02tablecrud",
+  "version": "1.0.0",
+  "description": "Crud",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImTheo/CrudNojdeJs.git"
+  },
+  "keywords": [
+    "javascript",
+    "crud",
+    "npm"
+  ],
+  "author": "imTheo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImTheo/CrudNojdeJs/issues"
+  },
+  "homepage": "https://github.com/ImTheo/CrudNojdeJs#readme",
+  "dependencies": {
+    "pg": "^8.7.3"
+  }
+}

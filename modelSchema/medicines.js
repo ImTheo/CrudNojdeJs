@@ -6,7 +6,8 @@ module.exports = function(){
         indice: Number,
         nombreMedicina: String,
         precio: Number,
-        farmaceutica: String
+        farmaceutica: String,
+        descripcionMedicina: String
         },{versionKey : false})
 
     return db.model('medicinas', medicines);

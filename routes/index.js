@@ -7,8 +7,8 @@ app.get('/', (req, res)=>{
     model.find({}, (err, medicines)=>{
         if(err){console.log(err);}
 
-        res.render('index', {
-            titulo: 'CRUD MongoDB',
+        res.render('vista', {
+            titulo: 'Lista de medicinas',
             medicines: medicines
         });
 
@@ -25,18 +25,7 @@ app.post('/add', (req, res)=>{
     });
 });
 
-app.get('/hecho/:id', (req,res)=>{
-    let id = req.params.id;
-    model.findById(id, (err, medicines)=>{
-        if(err){console.log(err);}
-        medicines.status=!medicines.status;
-
-        medicines.save()
-            .then(()=> res.redirect('/'))
-    });
-});
-
-app.get('/eliminar/:id', (req,res)=>{
+app.get('/delete/:id', (req,res)=>{
     let id = req.params.id;
     model.remove({_id: id}, (err, medicines)=>{
         if(err){console.log(err);}

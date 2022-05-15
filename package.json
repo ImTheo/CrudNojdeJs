@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/ImTheo/CrudNojdeJs#readme",
   "dependencies": {
-    "pg": "^8.7.3"
+    "mongoose": "^6.3.3"
   }
 }

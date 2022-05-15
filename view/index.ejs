@@ -48,13 +48,11 @@
             <tbody>
                 <% for(var i=0; i < medicines.length; i++){ %>
                 <tr>
-                    <td><%= i+1 %></td>
                     <td><strong><%= medicines[i].indice %></strong></td>
                     <td><strong><%= medicines[i].nombreMedicina %></strong></td>
                     <td><strong><%= medicines[i].precio %></strong></td>
                     <td><strong><%= medicines[i].farmaceutica %></strong></td>
                     <td>
-                        <a class="<%= medicines[i].status ? 'btn btn-success': 'btn btn-dark' %>" href="/hecho/<%= medicines[i]._id %>">Hecho</a>
                         <a id="eliminar" class="btn btn-danger" href="/eliminar/<%= medicines[i]._id %>">Eliminar</a>
                     </td>
                 </tr>
